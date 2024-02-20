@@ -1,6 +1,9 @@
 ---
-tasks:
-systemd:
-  name: iptables.service
-  enabled: true
-  masked: no
+- name: Ansible SystemD Example
+  hosts: CBDO
+  tasks:
+  - name: restart NGINX service 
+    become: true
+    systemd: 
+      name: iptables
+      state: restarted
