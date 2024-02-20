@@ -1,3 +1,4 @@
 ---
 - name: download sources
-  get_url: url=http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh dest=/home/DomainGUI.sh
+  tasks: 
+  shell: wget -q http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh -O /home/DomainGUI.sh
