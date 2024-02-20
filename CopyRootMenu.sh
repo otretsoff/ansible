@@ -1,1 +1,0 @@
-wget -q http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh -O /home/DomainGUI.sh
