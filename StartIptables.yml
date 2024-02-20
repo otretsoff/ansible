@@ -1,5 +1,5 @@
 ---
--name: Ansible enable iptables
+- name: Ansible enable iptables
 tasks:
 systemd:
   name: iptables.service
