@@ -1,4 +1,9 @@
-- name: Enable iptables
-  ansible.builtin.service:
-    name: iptables
-    state: enabled
+---
+- name: Ansible enable iptables
+gather_facts: true
+tasks:
+- name: Enable nginx service
+systemd:
+  name: iptables.service
+  enabled: true
+  masked: no
