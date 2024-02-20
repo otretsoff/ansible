@@ -1,4 +1,5 @@
 - name: Copy DomainGUI
+  hosts: CBDO
   become: yes
 
   tasks:
