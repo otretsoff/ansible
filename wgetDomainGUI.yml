@@ -1,5 +1,4 @@
 - name: Copy DomainGUI
-  hosts: ALL
   become: yes
 
   tasks:
