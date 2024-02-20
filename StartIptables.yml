@@ -1,8 +1,6 @@
 ---
 -name: Ansible enable iptables
-gather_facts: true
 tasks:
--name: Enable iptables service
 systemd:
   name: iptables.service
   enabled: true
