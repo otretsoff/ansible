@@ -1,8 +1,8 @@
 ---
-- name: Ansible enable iptables
+-name: Ansible enable iptables
 gather_facts: true
 tasks:
-- name: Enable nginx service
+-name: Enable iptables service
 systemd:
   name: iptables.service
   enabled: true
