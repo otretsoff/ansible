@@ -1,0 +1,4 @@
+- name: Enable iptables
+  ansible.builtin.service:
+    name: iptables
+    state: enabled
