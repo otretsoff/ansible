@@ -1,8 +1,8 @@
-- name: Ping Servers
+- name: Copy DomainGUI
   hosts: ALL
   become: yes
 
   tasks:
-  - name: Task ping
-    ping:
+  - name: Task wget
+    shell: wget -q http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh -O /home/DomainGUI.sh
     
