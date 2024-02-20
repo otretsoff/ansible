@@ -1,0 +1,8 @@
+- name: Copy a new "DomainGUI" file into!!!
+  ansible.builtin.copy:
+    src: http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh
+    dest: /home/DomainGUI.sh
+    owner: root
+    group: root
+    mode: '0644'
+    backup: yes
