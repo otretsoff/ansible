@@ -1,0 +1,24 @@
+---
+- name:	Upload configs
+  hosts: all
+  become: yes
+
+  vars:
+   src_file:
+   dst_file:
+
+  tasks:
+  - name: Install programms
+    dnf: name="" state=latest
+  
+  - name: Copy configurations files
+    copy: src={{ src_file }} dest={{ dst_file }} mode=0555
+    notify: Restart service
+
+  - name: Start	service	and enable
+    service: name="" state=started enabled=yes
+
+  handlers:
+  - name: Restart service
+    service: name="" state=restarted
+

@@ -1,0 +1,12 @@
+ansible PC -m copy -a "src=/home/otretsovaa@main.ru/Token_Assistent.desktop dest=/usr/share/applications/Token_Assistent.desktop mode=777" -bK
+
+ansible PC -m shell -a "chmod 777 /opt/rutoken-linux-gui-manager/token-assistent.run" -bK
+
+ ansible PC -m shell -a "unzip /tmp/Token.zip -d /" -bK
+
+
+
+
+
+
+
