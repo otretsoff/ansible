@@ -1,0 +1,24 @@
+su
+ifconfig
+
+nano /etc/iptables.sh
+nano /etc/systemd/system/iptables.restore.service
+
+chmod +x /etc/iptables.sh
+systemctl enable iptables.restore.service
+systemctl enable iptables
+systemctl start iptables
+systemctl start iptables.restore.service
+iptables --list
+
+exit
+exit
+
+
+export VIP=tun0
+
+$IPT -A INPUT -i $VIP -j ACCEPT
+$IPT -A OUTPUT -o $VIP -j ACCEPT
+
+su
+systemctl enable iptables --now
