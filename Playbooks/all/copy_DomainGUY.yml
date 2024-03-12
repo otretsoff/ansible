@@ -15,7 +15,6 @@
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/DomainGUI.sh
-      checksum: md5:9cb6bed14914e654dd08383ea41830f2537df6bc
       force: true
       group: root
       owner: root
