@@ -12,6 +12,7 @@
       
   - name: Download DomainGUI.sh
     become: true
+    become_method: sudo
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/
