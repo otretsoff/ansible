@@ -9,7 +9,7 @@
       path: /tmp/.ansible
       state: directory
       mode: 0755
-      
+  tasks:      
   - name: Download DomainGUI.sh
     become: true
     get_url:
