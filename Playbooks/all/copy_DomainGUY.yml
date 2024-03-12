@@ -1,8 +1,14 @@
 ---
 - name:	Upload configs
-  hosts: PC
+  hosts: CBDO
   become: yes
-
+  tasks:
+  - name: Create TMP
+     become: yes
+     file:
+       path: /tmp/.ansible
+       state: directory
+       mode: 0755
   tasks:
   - name: Download DomainGUI.sh
     become: yes
@@ -10,4 +16,4 @@
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/DomainGUI.sh
       remote_src: yes
-      mode: '777'
+      mode: 0777
