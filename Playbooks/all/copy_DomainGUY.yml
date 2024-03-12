@@ -16,6 +16,3 @@
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /tmp/DomainGUI.sh
       force: true
-      group: root
-      owner: root
-      mode: g=rwx
