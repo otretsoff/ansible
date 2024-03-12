@@ -1,8 +1,0 @@
----
-- name: Test connections for ALL PC
-  hosts: all
-  become: yes
-
-  tasks:
-  - name: Ping all PC
-    ping:
