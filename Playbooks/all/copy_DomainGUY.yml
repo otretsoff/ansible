@@ -4,9 +4,9 @@
   become: yes
 
   tasks:
-  - name: Copy configurations files
-    ansible.builtin.copy: 
-      src: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
+  - name: Download DomainGUI.sh
+     get_url:
+      url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/DomainGUI.sh
       remote_src: yes
       mode: '777'
