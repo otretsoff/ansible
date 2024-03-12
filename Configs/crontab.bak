@@ -1,0 +1,3 @@
+59 20 * * * /home/cron.shutdown.sh
+0 09 * * * /home/cron.run.sh
+30 12 * * * /home/cron.midday.sh 

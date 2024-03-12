@@ -1,0 +1,5 @@
+[trueconf]
+name=TrueConf Repository
+baseurl=https://mirror.trueconf.ru/redos/7.3.1/x86_64/release/
+enabled=1
+gpgcheck=0

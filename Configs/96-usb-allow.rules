@@ -1,0 +1,7 @@
+# lsblk смотрим какой sd* диск это флеш накопитель
+# udevadm info -a -p /sys/block/sd* | grep serial.
+# ищем серийный номер и добавляем в исключения
+# sudo udevadm control --reload-rules
+# перезагружаем правила
+ATTRS{serial}=="SERIALNUM1",ENV{UDISKS_IGNORE}="0"
+ATTRS{serial}=="SERIALNUM2",ENV{UDISKS_IGNORE}="0"

@@ -1,0 +1,2 @@
+ENV{ID_MTP_DEVICE}=="1",ATTR{authorized}="0"
+ENV{GPHOTO2_DRIVER}=="PTP",ATTR{authorized}="0"

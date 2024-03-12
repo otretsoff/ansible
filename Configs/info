@@ -1,0 +1,45 @@
+conky.config = {
+	use_xft= true,
+	xftalpha= .1,
+	update_interval= 1,
+	total_run_times= 0,
+
+	background= true,
+
+	own_window= true,
+	own_window_type= 'desktop',
+	own_window_transparent= true,
+	own_window_hints= 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_color= '000000',
+	own_window_argb_visual= true,
+	own_window_argb_value= 0,
+
+	double_buffer= true,
+
+	minimum_width= 270,
+
+	alignment= 'bottom_right',
+	gap_x= 20,
+	gap_y= 100,
+	no_buffers= true,
+	text_buffer_size = 2048,
+	uppercase = false,
+	override_utf8_locale = true,
+
+	font= 'Ubuntu:style=Solid:size=11'
+}
+
+conky.text = [[
+${voffset 250}
+${alignc} ${color white}Сведения о компьютере
+
+ Имя компьютера: ${alignr}${nodename}
+ Пользователь: ${alignr}${user_names}
+ Время работы: ${alignr}${uptime}
+
+${alignc} ${color red}Техническая поддержка МКУ "ЦБДО"
+
+ Телефон: ${alignr}+7(34997)23956
+ Почта: ${alignr}support@purovskiydo.ru
+
+]]

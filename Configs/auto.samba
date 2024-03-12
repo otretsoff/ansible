@@ -1,0 +1,7 @@
+Exchange -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru ://server.main.ru/#Exchange
+CBDO -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru ://server.main.ru/ЦБДО
+DOAPR -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru ://server.main.ru/ДОАПР
+NPA -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru ://server.main.ru/НПА
+IT_Department -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru, ://1c01-trk-cbdo01.main.ru/it_department/
+Scan -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru ://server.main.ru/Scan
+Reports -fstype=cifs,multiuser,cruid=$UID,rw,sec=krb5,iocharset=utf8,domain=main.ru ://server.main.ru/Отчеты
