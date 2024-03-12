@@ -1,6 +1,6 @@
 ---
 - name:	Upload configs
-  hosts: NEW
+  hosts: PC
   become: true
   tasks:
   - name: Create TMP
