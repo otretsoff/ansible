@@ -1,9 +1,0 @@
----
-- name: Ansible SystemD Example
-  hosts: CBDO
-  tasks:
-  - name: restart NGINX service 
-    become: true
-    systemd: 
-      name: iptables
-      state: restarted
