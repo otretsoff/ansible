@@ -15,5 +15,7 @@
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/DomainGUI.sh
-      remote_src: yes
-      mode: 0777
+      mode: 0755
+      checksum: 68848affc1ee836487e15269341de3dffbf990bb
+      group: root
+      owner: root
