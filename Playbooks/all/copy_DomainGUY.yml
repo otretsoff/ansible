@@ -19,4 +19,5 @@
       group: root
       owner: root
       mode: g=rwx
-      
+      username: root
+      password: !QAZxsw2
