@@ -1,0 +1,8 @@
+---
+- name:	Install	programms
+  hosts: DO
+  become: yes
+
+  tasks: 
+  - name: Install Flatpak
+    dnf: name=flatpak state=latest

@@ -1,0 +1,11 @@
+---
+- name:	Install	programms
+  hosts: DO
+  become: yes
+
+  tasks: 
+  - name: Install the warehouse package from flathub for current user
+    community.general.flatpak:
+      name: io.github.flattool.Warehouse
+      state: present
+      method: system

@@ -1,0 +1,12 @@
+---
+- name:	Upload configs
+  hosts: CBDO
+  become: yes
+
+  tasks:
+  - name: Copy configurations files
+    ansible.builtin.copy: 
+      src: DomainGUI.sh
+      dest: /home/DomainGUI.sh
+      remote_src: yes
+      mode: '777'

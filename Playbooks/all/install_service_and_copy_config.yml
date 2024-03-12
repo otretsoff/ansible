@@ -1,0 +1,17 @@
+---
+- name:	Upload configs
+  hosts: PC
+  become: yes
+
+  tasks:
+  - name: Copy configurations files
+    copy: 
+      src=/etc/ansible/playbooks/Configs/DomainGUI.sh
+      dest=/home/DomainGUI.sh
+      remote_src=yes
+    notify: Restart service
+
+  handlers:
+  - name: Restart service
+    service: name="autofs" state=restarted
+
