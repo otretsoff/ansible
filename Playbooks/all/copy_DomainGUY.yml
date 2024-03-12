@@ -15,6 +15,6 @@
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/DomainGUI.sh
-      mode: 0755
+      mode: 0777
       group: root
       owner: root
