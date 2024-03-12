@@ -1,17 +1,17 @@
 ---
 - name:	Upload configs
   hosts: PC
-  become: yes
+  become: true
   tasks:
   - name: Create TMP
-    become: yes
+    become: true
     file:
       path: /tmp/.ansible
       state: directory
       mode: 0755
       
   - name: Download DomainGUI.sh
-    become: yes
+    become: true
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/
