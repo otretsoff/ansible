@@ -5,9 +5,9 @@
 
   tasks:
   - name: Download DomainGUI.sh
-  become: yes
-  get_url:
-    url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
-    dest: /home/DomainGUI.sh
-    remote_src: yes
-    mode: '777'
+    become: yes
+    get_url:
+      url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
+      dest: /home/DomainGUI.sh
+      remote_src: yes
+      mode: '777'
