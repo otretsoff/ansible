@@ -1,8 +1,0 @@
-- name: Copy DomainGUI
-  hosts: CBDO
-  become: yes
-
-  tasks:
-  - name: Task wget
-    shell: wget -q http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh -O /home/DomainGUI.sh
-    
