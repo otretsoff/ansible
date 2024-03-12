@@ -9,10 +9,16 @@
       path: /tmp/.ansible
       state: directory
       mode: 0755
-  
   - name: Download DomainGUI.sh
     become: true
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
-      dest: /tmp/DomainGUI.sh
+      dest: /tmp/.ansible/DomainGUI.sh
       force: true
+  - name: Copy files
+    become: true
+    become_user: otretsovaa@main.ru
+    become_method: sudo
+    copy:
+      src: /tmp/.ansible/DomainGUI.sh
+      dest: /home/DomainGUI.sh
