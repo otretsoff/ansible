@@ -1,6 +1,6 @@
 ---
 - name:	Upload configs
-  hosts: PC
+  hosts: CBDO
   become: true
   tasks:
   - name: Create TMP
