@@ -15,4 +15,3 @@
     get_url:
       url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
       dest: /home/
-      mode: 0777
