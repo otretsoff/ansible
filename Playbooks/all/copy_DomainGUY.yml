@@ -14,6 +14,6 @@
     become_user: otretsovaa@main.ru
     become_method: sudo
     get_url:
-      url: https://github.com/otretsoff/ansible/blob/main/Configs/DomainGUI.sh
-      dest: /tmp/.ansible/DomainGUI.sh
+      url: http://repo.main.ru/redos/7.3/x86_64/setup/DomainGUI.sh
+      dest: /home/DomainGUI.sh
       force: true
