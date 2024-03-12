@@ -4,12 +4,12 @@
   become: yes
   tasks:
   - name: Create TMP
-     become: yes
-     file:
-       path: /tmp/.ansible
-       state: directory
-       mode: 0755
-  tasks:
+    become: yes
+    file:
+      path: /tmp/.ansible
+      state: directory
+      mode: 0755
+      
   - name: Download DomainGUI.sh
     become: yes
     get_url:
