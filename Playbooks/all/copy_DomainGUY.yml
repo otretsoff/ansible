@@ -10,7 +10,7 @@
       state: directory
       mode: 0755
       
-  - name: Download DomainGUI.sh
+  - name: Download DomainGUI1.sh
     become: true
     become_method: sudo
     get_url:
